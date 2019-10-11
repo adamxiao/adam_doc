@@ -10,6 +10,9 @@ Welcome to adam_doc's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   hello
+   sphinx_doc
+
 
 
 Indices and tables
