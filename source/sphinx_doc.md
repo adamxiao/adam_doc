@@ -30,6 +30,9 @@ RUN yum makecache \
     && yum install -y python3-pip \
     && pip3 install sphinx sphinx-autobuild sphinx_rtd_theme
 
+RUN yum install -y graphviz make \
+    && pip3 install recommonmark
+
 ENTRYPOINT ["/bin/bash"]
 ```
 
