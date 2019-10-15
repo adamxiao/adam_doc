@@ -4,8 +4,36 @@
 
 refer https://kinshines.github.io/archivers/read-the-doc-sphinx
 
+0. using in docker
+
+```bash
+docker run -it -v $(pwd)/docs:/var/documentation netresearch/sphinx
+#docker run -it -v $(pwd)/docs:/var/documentation netresearch/sphinx-buildbox
+```
+
+1. install with pip
+
 ```
 pip install sphinx sphinx-autobuild sphinx_rtd_theme
+```
+
+2. install in docker(centos)
+
+Dockerfile
+```
+FROM centos:7.4.1708
+LABEL maintainer="iefcuxy@gmail.com"
+
+ENV DEBIAN_FRONTEND noninteractive
+
+RUN yum makecache \
+    && yum install -y python3-pip \
+    && pip3 install sphinx sphinx-autobuild sphinx_rtd_theme
+
+RUN yum install -y graphviz make \
+    && pip3 install recommonmark
+
+ENTRYPOINT ["/bin/bash"]
 ```
 
 ## sphinx quick start

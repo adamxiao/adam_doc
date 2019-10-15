@@ -13,6 +13,7 @@ Welcome to adam_doc's documentation!
    hello
    sphinx_doc
    iso2docker
+   qemu/qemu_deliver_data
 
 
 
