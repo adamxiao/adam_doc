@@ -14,6 +14,7 @@ Welcome to adam_doc's documentation!
    sphinx_doc
    iso2docker
    qemu/qemu_deliver_data
+   tools/shadowsocks
 
 
 
