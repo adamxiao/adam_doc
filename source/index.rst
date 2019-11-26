@@ -15,6 +15,8 @@ Welcome to adam_doc's documentation!
    iso2docker
    qemu/qemu_deliver_data
    tools/shadowsocks
+   tools/package_repo
+   tools/docker_images
 
 
 
