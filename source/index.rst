@@ -17,6 +17,7 @@ Welcome to adam_doc's documentation!
    tools/shadowsocks
    tools/package_repo
    tools/docker_images
+   ats_slice_plugin
 
 
 
