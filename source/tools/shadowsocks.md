@@ -41,3 +41,20 @@ systemctl start shadowsocks-libev-local@ss-server.service
  "method":"chacha20-ietf-poly1305"
 }
 ```
+
+3. pac proxy
+
+keyword: `ubuntu shadowsocks 全局`
+refer https://www.litcc.com/2016/12/29/Ubuntu16-shadowsocks-pac/index.html
+
+```bash
+```
+
+tun2socks ?
+
+privoxy
+/etc/privoxy/config
+```
+forward-socks5t   /               127.0.0.1:1080 .
+```
+proxychain
